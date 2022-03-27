@@ -63,10 +63,10 @@ class LoginForm extends Component{
             <Container fluid className={"align-items-center p-0 py-5 d-flex "+this.props.classExt}>
                 <Row className="mx-auto text-start w-100 pt-5">
                     <Col xs={11} md={5} lg={4} className="mx-auto p-0 d-flex align-items-center">
-                        <Form className="text-start w-100 border border-dark-gray p-4 rounded bg-form shadow text-secondary opacity-9 fw-bold z-index-10"
+                        <Form className="text-start w-100 border border-secondary p-4 rounded bg-dark shadow text-white opacity-9 fw-bold"
                             autoComplete="off"
                             method="POST">
-                            <div className="border-bottom border-dark-gray mb-4">
+                            <div className="border-bottom border-secondary mb-4">
                                 <p className="fw-bold mb-1">
                                     User Login
                                 </p>
@@ -75,7 +75,7 @@ class LoginForm extends Component{
                                 <Form.Label>Login</Form.Label>
                                  <Form.Control type="text" 
                                     placeholder="Enter login" 
-                                    className="rounded-pill border-dark-gray text-secondary"
+                                    className="rounded-pill border-secondary text-secondary"
                                     maxLength="50"
                                     name="userName"
                                     onChange={this.updateUserData.bind(this)} 
@@ -86,7 +86,7 @@ class LoginForm extends Component{
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control type="password" 
                                     placeholder="Enter password" 
-                                    className="rounded-pill border-dark-gray text-secondary"
+                                    className="rounded-pill border-secondary text-secondary"
                                     maxLength="40"
                                     name="userPass"
                                     onChange={this.updateUserData.bind(this)} 
@@ -94,21 +94,21 @@ class LoginForm extends Component{
                                     required/>
                             </Form.Group>
                             <div className="w-100 text-start py-3">
-                                <p className="text-secondary fw-normal">
+                                <p className="text-white fw-normal">
                                     Not registered? 
-                                    <Link to={this.props.backLink.href} className="text-secondary fw-bold text-decoration-none">
+                                    <Link to={this.props.backLink.href} className="text-white fw-bold text-decoration-none">
                                          {this.props.backLink.name}
                                     </Link>
                                 </p>
                             </div>
                             <div className="w-100 text-end py-1">
                                 <Button 
-                                    variant="outline-secondary" 
+                                    variant="outline-light" 
                                     type="reset" 
                                     className="mx-1 rounded-pill">
                                     Clear
                                 </Button>
-                                <Button variant="outline-secondary" 
+                                <Button variant="outline-light" 
                                     className="mx-1 rounded-pill"
                                     onClick={this.sendForm.bind(this)}>
                                     Login

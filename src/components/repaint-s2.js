@@ -7,7 +7,7 @@ import Table from "../../node_modules/react-bootstrap/Table";
 class RepaintS2 extends Component{
     render(){
         return(    
-            <Container fluid className="d-flex minh-50vh bg-light align-items-center py-5">
+            <Container fluid className="repaint-s2 d-flex minh-50vh bg-light align-items-center py-5 border-top border-secondary">
                 <Row className="mx-0 w-100">
                     <Col xs={12} md={{span:6,offset:6}} lg={{span:5,offset:7}} 
                         className="minh-50vh d-flex align-items-center">
@@ -15,7 +15,7 @@ class RepaintS2 extends Component{
                             <h2 className="dispaly-6 fw-bold text-secondary text-shadow">
                                 Lorem ipsum
                             </h2>
-                            <p className="text-muted">
+                            <p className="text-white">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
                                 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
                                 veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim 
@@ -23,7 +23,7 @@ class RepaintS2 extends Component{
                             </p>
                             <Table hover striped>
                                 <thead>
-                                    <tr className="text-secondary">
+                                    <tr className="text-white">
                                         <th className="w-25">Name</th>
                                         <th className="w-50">Description</th>
                                         <th className="w-25">Price</th>
